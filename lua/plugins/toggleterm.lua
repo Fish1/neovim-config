@@ -1,8 +1,11 @@
 return {
   {
     "akinsho/toggleterm.nvim",
-    config = function()
-      require("toggleterm").setup()
-    end,
+    version = "*",
+    config = {
+      open_mapping = "<C-\\>",
+      shell = "fish",
+      direction = "float",
+    },
   },
 }
