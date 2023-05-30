@@ -6,6 +6,7 @@ return {
       open_mapping = "<C-\\>",
       shell = "fish",
       direction = "float",
+      persist_size = true,
     },
   },
 }
