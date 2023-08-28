@@ -150,14 +150,6 @@ require("lazy").setup({
 	},
 
 	{
-		"EdenEast/nightfox.nvim",
-		priority = 1000,
-		config = function()
-			vim.cmd.colorscheme("nightfox")
-		end,
-	},
-
-	{
 		-- Set lualine as statusline
 		"nvim-lualine/lualine.nvim",
 		-- See `:help lualine.txt`
@@ -214,12 +206,6 @@ require("lazy").setup({
 		build = ":TSUpdate",
 	},
 
-	{
-		"kdheepak/lazygit.nvim",
-		requires = {
-			"nvim-lua/plenary.nvim",
-		},
-	},
 	-- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
 	--       These are some example plugins that I've included in the kickstart repository.
 	--       Uncomment any of the lines below to enable them.
@@ -232,7 +218,7 @@ require("lazy").setup({
 	--    Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
 	--
 	--    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
-	-- { import = 'custom.plugins' },
+	{ import = "plugins" },
 }, {})
 
 -- [[ Setting options ]]
