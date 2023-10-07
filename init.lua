@@ -172,10 +172,7 @@ require("lazy").setup({
 		main = "ibl",
 		-- Enable `lukas-reineke/indent-blankline.nvim`
 		-- See `:help indent_blankline.txt`
-		opts = {
-			char = "┊",
-			show_trailing_blankline_indent = false,
-		},
+		opts = {},
 	},
 
 	-- "gc" to comment visual regions/lines
@@ -539,6 +536,13 @@ cmp.setup({
 
 local nerdtree = require("nvim-tree")
 nerdtree.setup()
+
+local ibl = require("ibl")
+ibl.setup({
+	indent = {
+		char = "*",
+	},
+})
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
